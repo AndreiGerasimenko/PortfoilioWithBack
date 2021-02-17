@@ -1,0 +1,17 @@
+.sendButton-container {
+  text-align: center;
+}
+
+.send-button {
+  width: 120px;
+  height: 40px;
+  font-size: 17px;
+}
+
+.ant-form-item-has-error .ant-form-item-explain {
+  color: #f2aeaa;
+}
+
+.feedback-textarea {
+  resize: none;
+}

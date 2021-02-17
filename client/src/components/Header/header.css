@@ -1,0 +1,23 @@
+.page-header {
+  background-color: #fff !important;
+  padding: 0 10px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.menu-toggle-icon {
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.owner-title {
+  margin-left: 10px;
+  font-size: 17px;
+}

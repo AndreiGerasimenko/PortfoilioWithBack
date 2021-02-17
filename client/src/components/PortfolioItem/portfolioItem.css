@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+.project-container {
+  width: 100%;
+  padding-top: 50%;
+  padding-bottom: 50%;
+  position: relative;
+}
+
+.project-content {
+  background-color: rgb(185, 207, 228);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 10px 10px 5px 2px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.project-info-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.toolBox-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media (hover: hover) {
+  .project-info-overlay {
+    -webkit-transform: translateX(-101%);
+    transform: translateX(-101%);
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+  }
+
+  .project-content:hover .project-info-overlay {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}

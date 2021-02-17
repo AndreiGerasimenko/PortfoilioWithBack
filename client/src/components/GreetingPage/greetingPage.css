@@ -1,0 +1,49 @@
+.greetingPage-container {
+  min-height: 50vh;
+  background-image: url("../../assets/greeting-background.jpg");
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.button-group-container {
+  text-transform: uppercase;
+  transform: translateY(-100px);
+}
+
+.greetings-button {
+  color: #4d4d4d;
+  border: 1px solid #aaa4a4;
+}
+
+.my-work-button {
+  background-color: #918c6a;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.my-work-button:hover,
+.my-work-button:focus {
+  background-color: #b6b18a;
+  border: 1px solid transparent;
+  color: #4d4d4d;
+}
+
+.my-work-button:hover {
+  -webkit-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+.hire-button:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
