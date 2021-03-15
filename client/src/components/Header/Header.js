@@ -1,10 +1,11 @@
 import React, { useState, useCallback } from "react";
 import { useMediaQuery } from "react-responsive";
+import { Layout, Drawer } from "antd";
+import { MenuOutlined } from "@ant-design/icons";
 import Nav from "../Nav/Nav";
 import "./header.css";
+import devphoto from "../../assets/devphoto.jpg"
 
-import { Layout, Drawer, Avatar } from "antd";
-import { MenuOutlined } from "@ant-design/icons";
 
 export default () => {
   const [sideMenuShown, setShowMenu] = useState(false);
@@ -24,9 +25,14 @@ export default () => {
 
   return (
     <Layout.Header className="page-header">
-      <div>
-        <Avatar size={60}>AH</Avatar>
-        <span className="owner-title">Andrii Herasimenko</span>
+      <div className="logo-container">
+        <div className="dev-image-container">
+          <img 
+            src={devphoto} 
+            alt="AH" 
+            width="70px" />
+        </div>
+        <span className="owner-title">Andrii Herasymenko</span>
       </div>
 
       {isSmScreenSize ? (
