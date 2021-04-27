@@ -13,7 +13,7 @@ export default () => {
           <div className="about-me-text">
             Welcome to my portfolio site. I`m Front-end developer Andrew. I constantly develop my skills in creating new projects using modern technologies. I think the best way to prove abilities is to demonstrate complete projects. So, down below you can check out the results of my work.
           </div>
-          <a href='/public/Front-End-Developer-CV.rtf' download>
+          <a href='/download-cv'>
             <Button className="download-button">
               download my cv
             </Button>
