@@ -28,10 +28,22 @@ export default ({ projectInfo }) => {
               justifyContent: "center",
             }}
           >
-            <Button size={isDiapazon ? "small" : "middle"}>Check it out</Button>
+            <Button 
+              size={isDiapazon ? "small" : "middle"}
+              type='link'
+              href={projectInfo.projectLink}
+              target="_blank"
+              style={{ color: 'white', border: '1px solid white'}}
+            >
+              Check it out
+            </Button>
             <Button
               icon={<GithubOutlined />}
+              type='link'
+              href={projectInfo.codeLink}
+              target="_blank"
               size={isDiapazon ? "small" : "middle"}
+              style={{ color: 'white', border: '1px solid white'}}
             >
               Code
             </Button>

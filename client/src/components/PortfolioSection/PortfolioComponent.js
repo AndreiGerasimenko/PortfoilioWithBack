@@ -1,25 +1,9 @@
 import React from "react";
 import { Row, Col } from "antd";
 import { PortfolioItem } from "../../components";
+import { projects } from "../../projects";
 
 import "./portfolioComponent.css";
-
-const projectInfo = {
-  title: "Sea Battle",
-  technologies: [
-    "CSS",
-    "HTML",
-    "ReactJS",
-    "Redux",
-    "Redux-saga",
-    "Redux-thunk",
-  ],
-  backgroundImage: "",
-  codeLink: "",
-  projectLink: "",
-};
-
-const projectsArray = [projectInfo, projectInfo, projectInfo];
 
 export default () => {
   return (
@@ -28,10 +12,10 @@ export default () => {
       className="portfolio-top-margin"
       justify="space-around"
     >
-      {projectsArray.map((item, i) => {
+      {projects.map(item => {
         return (
           <Col
-            key={i}
+            key={item.id}
             xl={{ span: 6 }}
             md={{ span: 7 }}
             sm={{ span: 10 }}
