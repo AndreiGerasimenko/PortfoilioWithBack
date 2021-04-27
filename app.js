@@ -29,6 +29,13 @@ app.get("/download-cv", (req, res) => {
   });
 });
 
+if(process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, 'client', 'build')));
+  app.get(/\/.+/, (req, res) => {
+    res.redirect('/');
+  })
+}
+
 app.listen(PORT, () =>
   console.log(`The server has been started on port ${PORT}...`)
 );
