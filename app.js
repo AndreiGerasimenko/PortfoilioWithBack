@@ -20,14 +20,14 @@ app.post("/feedback", async (req, res) => {
   }
 });
 
-app.get("/download-cv", (req, res) => {
-  const docPath = path.join(__dirname, "public", "Front-End Developer. CV.rtf");
-  res.download(docPath, (error) => {
-    if (error) {
-      console.log(error);
-    }
-  });
-});
+// app.get("/download-cv", (req, res) => {
+//   const docPath = path.join(__dirname, "public", "Front-End-Developer-CV.rtf");
+//   res.download(docPath, (error) => {
+//     if (error) {
+//       console.log(error);
+//     }
+//   });
+// });
 
 if(process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, 'client', 'build')));
