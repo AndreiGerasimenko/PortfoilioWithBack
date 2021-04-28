@@ -1,3 +1,5 @@
+import sbDemo from './Videos/seaBattleDemo.mp4'
+
 export const projects = [
     {
         id: '1',
@@ -12,6 +14,7 @@ export const projects = [
             "Websocket"
         ],
         backgroundImage: "",
+        video: sbDemo,
         codeLink: "https://github.com/AndreiGerasimenko/SeaBattle",
         projectLink: "https://seabattleandrewportfolio.herokuapp.com",
     },
@@ -28,6 +31,7 @@ export const projects = [
             "Typescript"
         ],
         backgroundImage: "",
+        video: null,
         codeLink: null,
         projectLink: null,
     }

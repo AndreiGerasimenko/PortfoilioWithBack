@@ -10,6 +10,13 @@ export default ({ projectInfo }) => {
   return (
     <div className="project-container">
       <div className="project-content">
+        {
+          projectInfo.video && 
+          <video width="100%" height="100%" autoPlay loop >
+            <source src={projectInfo.video} type="video/mp4"/>
+            There could be a video
+          </video>
+        }
         <div className="project-info-overlay">
           <Typography.Title
             level={2}
